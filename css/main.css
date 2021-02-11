@@ -1,0 +1,171 @@
+body {
+	margin: 0;
+	background-color: var(--color-secondary-2-1);
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	background-color: var(--color-primary-1);
+}
+
+#subheader{
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+
+header h1{
+	text-align: center;
+	font-size: 4em;
+	margin-block-start: 0;
+	margin-block-end: 0;
+	font-family: Roboto;
+	font-weight: 300;
+}
+
+a {
+	text-decoration: underline;
+	color: #000;
+}
+
+hr {
+	width: 50%;
+	margin: 0 auto;
+	border: 0.5px solid var(--color-primary-0);
+}
+
+#subheader h3{
+	font-size: 1em;
+	color: #333;
+	margin-block-start: 0.5em;
+	margin-block-end: 0;
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+	font-size: 1.5em;
+	font-family: Roboto;
+	font-weight: 400;
+}
+
+#social {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	margin-bottom: 0em;
+}
+
+#social a {
+	height: 1.5em;
+	margin: 0.4em;
+}
+
+#social img {
+	width: 1.5em;
+	height: 1.5em;
+	margin-top: 0.em;
+	margin-bottom: 0.2em;
+}
+
+#about {
+	margin: 2em 3em 0em 3em;
+    padding: 5px;
+	background-color: var(--color-primary-1);
+	font-family: Roboto;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+
+#projects {
+    margin: 2em;
+	display: flex;
+	justify-content: space-between;
+}
+
+.project {
+	margin: 0em 1em;
+	width: 24em;
+	background-color: var(--color-primary-1);
+	text-align: center;
+	font-family: Roboto;
+	padding: 0.5em;
+	transition: all 0.5s;
+	display: flex;
+	flex-direction: column;
+}
+
+.project:hover {
+	transform: scale(1.05);
+	filter: brightness(120%);
+	box-shadow: 0 0 0 2px grey;
+}
+
+.project-title {
+	font-size: 1.5em;
+	font-weight: 300;
+}
+
+.project-footer {
+	margin-top: auto;
+	display: flex;
+	justify-content: center;
+}
+
+.project p {
+	font-weight: 400;
+}
+
+.link-button {
+	background-color: var(--color-secondary-2-0);
+	margin: 0 2em;
+	width: 10em;
+	vertical-align: middle;
+	display: flex;
+	transition: all 0.5s;
+}
+
+.link-button:hover {
+	transform: scale(1.025);
+	filter: brightness(120%);
+	box-shadow: 0 0 0 1px grey;
+}
+
+.link-button a {
+	margin: auto;
+	padding: 0.5em;
+}
+
+/*
+	rules for mobile devices
+*/
+@media only screen and (max-width:800px){
+	
+	header h1{
+		font-size: 3em;
+	}
+	
+	#subheader h3 {
+		text-align: center;
+		font-size: 1em;
+	}
+
+	hr {
+		width: 75%;
+	}
+	
+	#projects {
+		width: 80%;
+		margin: 20px auto;
+		flex-direction: column;
+	}
+	
+	.project {
+		width: 90%;
+		margin: 10px auto;
+	}
+	
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Evolution Simulation | Moe Frumkin</title>
+    <meta name="description" content="Moe Frumkin's Personal Website'">
+    <meta name="keywords" content="Programming">
+    <meta name="author" content="Moe Frumkin">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/icons/favicon-16x16.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@100;200;300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/colors.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+</head>
+
+<body>
+    <header>
+        <h1><a href="/">Moe Frumkin</a></h1>
+        <hr>
+        <div id="subheader">
+            <h3>Student</h3>
+            <h3>Programmer</h3>
+            <h3>Tech Enthusiast</h3>
+        </div>
+        <hr>
+        <div id="social">
+            <a href="https://github.com/moefrumkin" target="blank"><img src="/img/social/github.png" /></a>
+            <a href="https://www.linkedin.com/in/moe-frumkin-36724a1b4/" target="blank"><img
+                    src='/img/social/linkedin.svg' /></a>
+            <a href="mailto:moe@moefrumkin.com"><img src="/img/social/email.svg" /></a>
+        </div>
+    </header>
+    <div id="about">
+        <span class="project-title">Evolution Simulation</span>
+        <hr />
+        <p>
+            For the final project of my CS2 class, I designed an evolution simulation in the Java programming language.
+            The simulation takes place on a grid of tiles, each with a certain amount of grass, indicated by the
+            brightness of the tile.
+            An organism is has a head segment, followed by a tree of stomachs and legs. Each stomach increases food
+            capacity and each leg increases move speed.
+            In each cycle of the simulation, the grass grows following a logistic growth curve, then the organisms
+            update.
+            An organisms will move in the direction of the nearest grass tile with the most grass, within its field of
+            view.
+            It will then eat as much grass as its stomachs can contain from the tile it ends up on.
+            After that it will consume a certain amount of the food that is required by its appendages.
+            If it has enough food left over, it will asexually reproduce and lay and egg that will hatch in the next
+            cycle.
+            Children have random mutations that differentiate them from their parents.
+            If an organisms runs out of food it will die.
+        </p>
+        <div class="project-footer">
+            <div class="link-button">
+                <a href="https://github.com/moefrumkin/EvolutionSimulation" target="blank">GitHub Repository</a>
+            </div>
+            <div class="link-button">
+                <a href="/jar/FrumkinMoeFinalProject.jar" download>Runnable Version</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
